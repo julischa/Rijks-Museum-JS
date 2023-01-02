@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+}
+#card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+#card-container > div {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: "Poppins Light";
+    src: url("poppins-light.ttf") format("truetype");
+    width: 450px;
+}
+#card-container > div > img {
+    height: 300px;
+    width: 300px;
+}
+.container-fluid {
+     font-family: "Poppins";
+     src: url("poppins.ttf") format("truetype");
+}
+a {
+    font-family: "Poppins";
+}
+#beschreibung > p {
+        font-family: "Poppins";
+        font-size: 40px;
+}
+
