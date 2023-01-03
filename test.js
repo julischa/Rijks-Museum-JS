@@ -25,12 +25,15 @@ function createButtons() {
     // create buttons for veermer and rembrandt
     const buttonContainer = document.getElementById("button-container")
 
+    //create rembrandt button
     let rembrandtButton = document.createElement("button")
     rembrandtButton.setAttribute("id", "rembrandt")
-    rembrandtButton.setAttribute("class", "px-4 py-2 mt-2 mx-2 bg-white")
+    rembrandtButton.setAttribute("class", "px-4 py-2 mt-4 mx-2 bg-white")
     rembrandtButton.innerText = "REMBRANDT"
     rembrandtButton.value = "Rembrandt van Rijn"
     buttonContainer.appendChild(rembrandtButton)
+
+    //create Vermeer button
     let veermerButton = document.createElement("button")
     veermerButton.setAttribute("id", "vermeer")
     veermerButton.setAttribute("class", "px-4 py-2 mt-2 mx-2 bg-white")
@@ -38,7 +41,7 @@ function createButtons() {
     veermerButton.value = "Johannes Vermeer"
     buttonContainer.appendChild(veermerButton)
     addEvents()
-    ///////
+    
 }
 
 function addEvents() {
@@ -47,7 +50,7 @@ function addEvents() {
 
     rembrandtButton.addEventListener("click", (event) => {
         console.log('event.target :>> ', event.target.value);
-        const artistName=event.target.value
+        const artistName = event.target.value
         FetchRembrandData(artistName)
         
     })
