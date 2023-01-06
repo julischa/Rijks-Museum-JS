@@ -14,7 +14,7 @@ const addEventListener = () => {
 const lightSwitchEffect = () => {
     const toggle = document.getElementById('toggleDark');
 
-    const body = document.querySelector('body');
+const body = document.querySelector('body');
 const h1 = document.querySelector('h1');
 const h2 = document.querySelector('h2');
 const p = document.querySelector('p');
@@ -25,7 +25,7 @@ const girl = document.getElementById('girl');
     // Dark mode
     body.style.background = 'black';
     body.style.color = 'white';
-      body.style.transition = '2s';
+    body.style.transition = '2s';
       
     h1.style.color = 'white';
     h1.style.transition = '2s';
