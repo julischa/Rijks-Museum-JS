@@ -14,12 +14,3 @@ function sayHello(message) {
 
 
 
-
-
-
-
-
-
-// event.target.value
-
-
