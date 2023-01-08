@@ -10,9 +10,6 @@
         font-family: "Poppins";
         src: url("poppins-regular.ttf") format("truetype");
 }
-.bg-danger {
-    background-color: aquamarine;
-}
 hr.style {
 	border-top: 2px solid black;
 	text-align: center;
@@ -24,6 +21,12 @@ h1 {
         color: black;
         letter-spacing: -6px;
     }
+.card h2{
+    color:white
+}
+#bg-danger {
+    color: tomato;
+}
 h2 {
         font-family: "Nightfall";
         src: url("nightfall-regular.ttf") format("truetype");
@@ -41,7 +44,7 @@ h3 {
     font-size: 17px;
     background-color: black;
     border-radius: 0cm;
-    border-color: white;
+    border-color: black;
 }
 #footer {
     font-family: "Poppins Light";
@@ -52,17 +55,15 @@ h3 {
 #form-control {
     color: #000;
     font-size: 18px;
-    border-radius: 1px;
     border-color: black;
 }
 input {
+  border: 1px solid black;
   width: 200px;
   height: 40px;
   font-family: "Poppins Light";
   font-size: 18px;
   padding-left: 15px;
-  border-radius: 1cm;
-  border-color: black;
 }
 .link {
     font-family: "Poppins Light";
@@ -91,34 +92,28 @@ a {
   color: black;
   background: tomato;
 }
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box
-}
-.fl-left {
-    float: left
-}
-
-.fl-right {
-    float: right
-}
 .row {
-    overflow: hidden
+    overflow: hidden;
+    display: flex;
 }
 
+.card {
+    width: 49%;
+    margin-bottom: 10px;
+}
+
+.card+.card {
+    margin-left: 2%;
+}
 .card {
     display: table-row;
     width: 49%;
     background-color: #fff;
-    color: black;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
     border-radius: 4px;
     position: relative
 }
-
 .card+.card {
     margin-left: 2%
 }
@@ -200,14 +195,14 @@ a {
 .card-cont .even-date time span {
     display: block
 }
-
-.card-cont a {
+.card-cont > a {
     display: block;
     text-decoration: none;
     width: 80px;
     height: 30px;
-    background-color: tomato;
-    color: #fff;
+    background-color: white;
+    border-color: #000 !important;
+    color: #000;
     text-align: center;
     line-height: 30px;
     position: absolute;
@@ -215,12 +210,23 @@ a {
     bottom: 20px
 }
 
-.row:last-child .card:first-child .card-cont a {
-    background-color: #037FDD
+.date:before,
+.date:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    z-index: 1;
+    border-radius: 50%
 }
 
-.row:last-child .card:last-child .card-cont a {
-    background-color: #F8504C
+.date:after {
+    top: auto;
+    bottom: -15px;
 }
 
 @media screen and (max-width: 860px) {
@@ -238,3 +244,33 @@ a {
         font-size: 75%
     }
 }
+
+
+
+#card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+}
+#card-container > div {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: "Poppins Light";
+    src: url("poppins-light.ttf") format("truetype");
+    width: 450px;
+}
+#card-container > div > img {
+  height: 350px;
+  width: 300px;
+  align-self: center;
+}
+.container-fluid {
+     font-family: "Poppins";
+     src: url("poppins.ttf") format("truetype");
+}
+

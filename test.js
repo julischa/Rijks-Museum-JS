@@ -75,7 +75,26 @@ function render(api) {
         //h4 tag title
         let title = document.createElement("h4")
         title.innerText = api.artObjects[i].title
-        console.log(title.innerText);
+      console.log(title.innerText);
+
+//shorten text to 5 words 
+let fullText = api.artObjects[i].title;
+let wordArray = fullText.split(" ");
+let shortenedText = "";
+
+if (wordArray.length > 5) {
+  // Shorten text to 5 words
+  for (let i = 0; i < 5; i++) {
+    shortenedText += wordArray[i] + " ";
+  }
+  shortenedText += "";
+} else {
+  // Text is already less than 5 words, do not shorten
+  shortenedText = fullText;
+}
+
+title.innerText = shortenedText;
+
 
 
         //img 
@@ -128,31 +147,6 @@ function FetchVermeerData() {
 // Define the API endpoint for searching the product catalog
 var endpoint = "http://www.rijksmuseum.nl/api/nl/collection/SK-C-5";
 
-// Define the search query
-var query = "red shirt";
 
-// Use the fetch() method to call the API and search for the specified product
-fetch(endpoint + "?q=" + query)
-  .then(function(response) {
-    // Parse the API response as JSON
-    return response.json();
-  })
-  .then(function(data) {
-    // Check if any products were found
-    if (data.products.length > 0) {
-      // Loop through the array of products
-      data.products.forEach(function(product) {
-        // Print the product details
-        console.log("Product: " + product.name);
-        console.log("Price: " + product.price);
-        console.log("-------------------");
-      });
-    } else {
-      // No products were found
-      console.log("No products were found for the specified query.");
-    }
-  })
-  .catch(function(error) {
-    // There was an error calling the API
-    console.log("An error occurred: " + error);
-  });
+
+
