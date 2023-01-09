@@ -28,7 +28,7 @@ function createButtons() {
 	//create rembrandt button
 	let rembrandtButton = document.createElement("button")
 	rembrandtButton.setAttribute("id", "rembrandt")
-	rembrandtButton.setAttribute("class", "px-4 py-2 mt-4 mx-2 bg-white")
+	rembrandtButton.setAttribute("class", "px-4 py-2 mt-2 mx-2")
 	rembrandtButton.innerText = "REMBRANDT"
 	rembrandtButton.value = "Rembrandt van Rijn"
 	buttonContainer.appendChild(rembrandtButton)
@@ -36,13 +36,27 @@ function createButtons() {
 	//create Vermeer button
 	let veermerButton = document.createElement("button")
 	veermerButton.setAttribute("id", "vermeer")
-	veermerButton.setAttribute("class", "px-4 py-2 mt-2 mx-2 bg-white")
+	veermerButton.setAttribute("class", "px-4 py-2 mt-2 mx-2")
 	veermerButton.innerText = "VERMEER"
 	veermerButton.value = "Johannes Vermeer"
 	buttonContainer.appendChild(veermerButton)
-	addEvents()
+	
+	 // create delete button
+  let deleteButton = document.createElement("button");
+  deleteButton.setAttribute("id", "delete-button");
+  deleteButton.setAttribute("class", "px-4 py-2 mt-2 mx-2")
+  deleteButton.innerText = "✶";
+  buttonContainer.appendChild(deleteButton);
+
+  addEvents();
+
+rembrandtButton.classList.add('red-button');
+veermerButton.classList.add('red-button');
+deleteButton.classList.add('red-button');
+
 
 }
+
 
 function addEvents() {
 	const rembrandtButton = document.getElementById("rembrandt")
@@ -59,9 +73,20 @@ function addEvents() {
 		console.log('event.target :>> ', event.target.value);
 		FetchVermeerData()
 	})
+
+	const deleteButton = document.getElementById("delete-button");
+	deleteButton.addEventListener("click", () => {
+		const cardcontainerToDelete = document.getElementById("card-container");
+		cardcontainerToDelete.innerHTML = ""
+		//elementToDelete.parentNode.removeChild(elementToDelete);
+	});
+
+
 }
 
+
 createButtons()
+
 
 function render(api) {
 	console.log('result inside Render :>> ', api);
@@ -77,19 +102,19 @@ function render(api) {
 		title.innerText = api.artObjects[i].title
 		console.log(title.innerText);
 
-		//shorten text to 5 words 
+		//shorten text to 4 words 
 		let fullText = api.artObjects[i].title;
 		let wordArray = fullText.split(" ");
 		let shortenedText = "";
 
-		if (wordArray.length > 5) {
+		if (wordArray.length > 4) {
 			// Shorten text to 5 words
-			for (let i = 0; i < 5; i++) {
+			for (let i = 0; i < 4; i++) {
 				shortenedText += wordArray[i] + " ";
 			}
 			shortenedText += "";
 		} else {
-			// Text is already less than 5 words, do not shorten
+			// Text is already less than 4 words, do not shorten
 			shortenedText = fullText;
 		}
 
@@ -142,4 +167,5 @@ function FetchVermeerData() {
 }
 
 // Define the API endpoint for searching the product catalog
-var endpoint = "http://www.rijksmuseum.nl/api/nl/collection/SK-C-5";
+//var endpoint = "http://www.rijksmuseum.nl/api/nl/collection/SK-C-5";
+
