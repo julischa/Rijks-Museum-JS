@@ -1,42 +1,24 @@
-#bg-danger {
-	color: tomato;
+body {
+	background-color: black;
+	color: white;
+	font-family: "Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
 }
 
-#bg-danger:hover {
-  text-decoration: 3px tomato;
-  text-underline-offset: 4px;
-}
-
-a {
-	color: black;
-	text-decoration: none;
-}
-
-a:visited {
-	text-decoration: none;
-}
-
-a:hover {
-    color: #000;
-	text-decoration: 3px underline #000;
-	text-underline-offset: 4px;
-}
-
-a:active {
-	text-decoration: none;
-}
 
 .navbar>.container {
-	font-family: "Poppins";
-	src: url("poppins-regular.ttf") format("truetype");
+	font-family: "Neue Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
+	padding-top: 20px;
+	font-size: 10px;
 }
 
 h1 {
-	font-family: "Nightfall";
-	src: url("nightfall-regular.ttf") format("truetype");
+	font-family: "Neue Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
 	font-size: 130px;
-	color: black;
-	letter-spacing: -6px;
+	font-weight: lighter;
+	color: #e1ff17;
 }
 
 .card h2 {
@@ -44,18 +26,18 @@ h1 {
 }
 
 h2 {
-	font-family: "Nightfall";
-	src: url("nightfall-regular.ttf") format("truetype");
-	font-size: 60px;
-	color: black;
+	font-family: "Neue Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
+	font-size: 130px;
+	color: white;
 }
 
 h3 {
  	display: flex;
   	justify-content: space-between;
-	font-family: "Poppins Light";
-	src: url("poppins-light.ttf") format("extralight");
+	font-family: "Neue Metana";
 	font-size: 25px;
+	font-weight: 100;
 	line-height: normal;
 	padding-top: 0px;
 }
@@ -67,7 +49,7 @@ img {
 }
 
 #button-addon2 {
-	font-family: "Poppins Light";
+	font-family: "Neue Metana";
 	font-size: 17px;
 	background-color: black;
 	border-radius: 0cm;
@@ -75,7 +57,7 @@ img {
 }
 
 #footer {
-	font-family: "Poppins Light";
+	font-family: "Neue Metana";
 	font-size: 21px;
 	display: flex;
 	align-items: center;
@@ -91,7 +73,7 @@ input {
 	border: 1px solid black;
 	width: 200px;
 	height: 40px;
-	font-family: "Poppins Light";
+	font-family: "Neue Metana";
 	font-size: 18px;
 	padding-left: 15px;
 }
@@ -100,10 +82,6 @@ input {
 	font-family: "Poppins Light";
 	color: black;
 	text-decoration: none;
-}
-
-#girl {
-	width: 300px;
 }
 
 #beschreibung {
@@ -118,4 +96,43 @@ input {
 ::selection {
 	color: black;
 	background: tomato;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.3px solid white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  position: relative;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color:  #e1ff17;
+  color: black!important;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover:before {
+  transform: scaleX(1);
+}
+
+a:hover {
+  color: black!important;
+}
+
+h3:hover {
+	color: black; 
 }
