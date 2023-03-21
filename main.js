@@ -79,4 +79,5 @@ const lightSwitchEffect = () => {
     navbar.style.transition = "2s";
   }
 };
+
 addEventListener();

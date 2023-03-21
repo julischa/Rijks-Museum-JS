@@ -9,42 +9,55 @@
       <title>RIJKS MUSEUM AMSTERDAM</title>
    </head>
    <body>
-      <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-      <nav class="navbar">
-         <div class="container navbar-expand-lg justify-content">
-           <h4>
-   RIJKSMUSEUM
-   <label class="switch">
-      <input type="checkbox" id="toggleLight">
-      <span class="slider"></span>
-   </label>
-</h4>
-
-            <ul class="nav d-flex align-items-center justify-content">
-               <li class="nav-item mx-4">
-                  <a href="exhibition.html">
-                     <h4>WHAT'S ON</h4>
-                  </a>
-                  </li>
-                  <li class="nav-item mx-4">
-                  <a href="tickets.html">
-                     <h4 id="bg-danger">VISIT</h4>
-                  </a>
-               </li>
-               <li class="nav-item mx-4">
-                  <a href="tickets.html">
-                     <h4>BUY TICKETS</h4>
-                  </a>
-               </li>
-            </ul>
+<nav class="navbar">
+   <div class="container navbar-expand-lg justify-content">
+      <h4>
+         <div class="logo">
+         <label class="switch">
+            <input type="checkbox" id="toggleLight">
+            <span class="slider"></span>
+         </label>
          </div>
-      </nav>
+      </h4>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3">
+               <a class="h4" href="#">WHAT'S ON</a>
+            </li>
+            <li class="nav-item me-3">
+               <a class="h4" href="#">VISIT</a>
+            </li>
+            <li class="nav-item me-3">
+               <a class="h4" href="#">BUY TICKETS</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</nav>
+<nav class="side-menu">
+   <ul>
+      <li class="nav-item my-4">
+               <a class="h4" href="#" id="a2">WHAT'S ON</a>
+            </li>
+            <li class="nav-item my-4">
+               <a class="h4" href="#" id="a2">VISIT</a>
+            </li>
+            <li class="nav-item my-4">
+               <a class="h4" href="#" id="a2">BUY TICKETS</a>
+            </li>
+   </ul>
+</nav>
+
+
+
       <div class="container my-5">
-          <h3 class="my-5">Guided Tours – Everyday at 11 am and 2 pm</h3>
+          <h3 class="my-5 text-center">Guided Tours – Everyday at 11 am and 2 pm</h3>
          <h1 classname="text-center">Welcome to Rijks Museum </h1>
          <!-- <img class="float-end my-5" id="girl" src="giphy.gif" alt="girl"> -->
-         <h3 class="my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+         <h3 class="my-5 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             Duis aute irure dolor in reprehenderit in voluptate velit esse Rembrandt cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
          </h3>
          <h2 class="float my-5">Events</h2>
@@ -60,7 +73,7 @@
                </div>
                <div class="container my-5">
   <h2 class="my-5">Current Exhibition</h2>
-  <div class="row g-6">
+  <div class="row g-6 text-center">
     <div class="col card-bg">
       <img src="image1.jpg" class="img-fluid" alt="image1">
       <h4>Container 1</h4>
@@ -105,7 +118,7 @@
                   <form action="#">
                      <div class="input-group mb-3">
                         <input id="form-control class="form-control" type="text" placeholder="E-Mail Address" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-primary" id="button-addon2" type="button">Sign up</button>
+                        <button class="btn btn-primary" id="button2" type="button">Sign up</button>
                      </div>
                   </form>
                </div>
@@ -113,5 +126,6 @@
          </div>
       </footer>
       <script src="main.js"></script>
+      <script src="hamburger.js"></script>
    </body>
 </html>

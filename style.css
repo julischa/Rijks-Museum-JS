@@ -41,9 +41,14 @@ h3 {
 #button2 {
 	font-family: "Neue Metana";
 	font-size: 17px;
-	background-color: black;
+	background-color: #b0a6cb;
 	border-radius: 0cm;
 	border-color: #b0a6cb;
+}
+
+#button2:hover {
+  background-color: #555f41;
+  border-color: #555f41;
 }
 
 #footer {
@@ -89,8 +94,16 @@ a {
   color: white;
   text-decoration: none;
   position: relative;
-  transition: color 0.5s ease;
+  font-family: "Neue Metana";
 }
+
+#a2 {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  font-family: "Neue Metana";
+}
+
 
 a:before {
   content: "";
@@ -149,8 +162,10 @@ a:hover {
   right: 0;
   bottom: 0;
   background-color: #ccc;
+  border-radius: 60px;
   -webkit-transition: .4s;
   transition: .4s;
+  
 }
 
 .slider:before {
@@ -161,6 +176,7 @@ a:hover {
   left: 4px;
   bottom: 4px;
   background-color: white;
+  border-radius: 60px;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -178,93 +194,105 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+/*Side menu */
 
-/* Menu Icon */
 
-.hamb{
-    cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-}
-
-.hamb-line {
-    background: var(--white);
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
-
-} 
-
-.hamb-line::before,
-.hamb-line::after{
-    background: var(--white);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-.hamb-line::before{
-    top: 5px;
-}
-.hamb-line::after{
-    top: -5px;
+.navbar-toggler {
+   border: none;
+   background-color: #b0a6cb;
+   outline: none;
+   cursor: pointer;
+   border-radius: 0cm;
+   margin-top: -15px;
 }
 
 .side-menu {
-    display: none;
+  position: fixed;
+  margin-top: 70px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  z-index: 999;
+  overflow-x: hidden;
+  transition: 1.5s;
+  background-color: white;
 }
 
-/* Toggle menu icon */
-.side-menu:checked ~ nav{
-    max-height: 100%;
-}
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
+.side-menu label {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1;
 }
 
-/* Toggle menu icon */
-.side-menu:checked ~ nav{
-    max-height: 100%;
-}
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
+.side-menu .menu-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-/* Responsiveness */
-@media (min-width: 768px) {
-    .nav{
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-        background-color: transparent;
-    }
-    .menu li{
-        float: left;
-    }
-    .menu a:hover{
-        background-color: transparent;
-        color: var(--gray);
+.side-menu .menu-links a {
+  font-size: 24px;
+  margin: 20px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-    }
+.side-menu .menu-links a:hover {
+  color: #b0a6cb;
+}
+
+.active {
+   content: '';
+    display: block;
+    margin-top: 70px;
+    height: 100%;
+    position: absolute;
+    transition: all 0.8s ease-out;
+    width: 100%;
+}
+
+.side-menu ul {
+   list-style: none; /* Remove bullet points */
+   margin-left: 12px;
+   padding: 0;
+   white-space: nowrap;
+}
+
+
+/* Default style */
+.logo::before {
+  content: "RIJKSMUSEUM";
+}
+
+/* Media query for smaller screens */
+@media (max-width: 576px) {
+  /* Hide "rijksmuseum" text */
+  .logo {
+     content: "RM";
+    display: inline-block;
+  }
+  /* Display "RM" text */
+  .logo::before {
+    content: "RM";
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+   h2 {
+    font-size: 60px;
+  }
+
+   h3 {
+    font-size: 16px;
+    width: 340px;
+  }
 }
