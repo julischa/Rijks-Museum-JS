@@ -1,5 +1,5 @@
 body {
-	background-color: black;
+	background-color: #282c34;
 	color: white;
 	font-family: "Metana";
 	src: url("neuemetana-regular.otf") format("truetype");
@@ -25,6 +25,28 @@ h1 {
 	color: white;
 }
 
+#intro {
+  font-family: "Neue Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
+	font-size: 130px;
+	font-weight: lighter;
+	color: white;
+  animation: slideUp 1.5s ease-in-out;
+  animation-fill-mode: both;
+}
+
+
+@keyframes slideUp {
+from {
+transform: translateY(100px);
+opacity: 0;
+}
+to {
+transform: translateY(0);
+opacity: 1;
+}
+}
+
 h2 {
 	font-family: "Neue Metana";
 	src: url("neuemetana-regular.otf") format("truetype");
@@ -45,9 +67,9 @@ h3 {
 #button2 {
 	font-family: "Neue Metana";
 	font-size: 17px;
-	background-color: tomato;
+	background-color: #df683e;
 	border-radius: 0cm;
-	border-color: tomato;
+	border-color: #df683e;
 }
 
 #button2:hover {
@@ -194,11 +216,11 @@ a:hover {
 }
 
 input:checked + .slider {
-  background-color: #b0a6cb;
+  background-color: #df683e;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #b0a6cb;
+  box-shadow: 0 0 1px #df683e;
 }
 
 input:checked + .slider:before {
@@ -206,16 +228,28 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+
+
+
 /*Side menu */
 
 
 .navbar-toggler {
-   border: none;
-   background-color: tomato;
-   outline: none;
+   background-color: #ccc;
+   border-radius: none;
    cursor: pointer;
-   border-radius: 0cm;
    margin-top: -15px;
+   padding: 10px;
+}
+
+.hamburger-bar {
+  height: 1px;
+  width: 20px;
+  border-color: #ccc;
+  border-radius: none;
+  background-color: black;
+  margin: 3px 0; /* Changed margin to add more space between the bars */
+  transition: transform 0.3s;
 }
 
 .side-menu {
@@ -227,8 +261,8 @@ input:checked + .slider:before {
   width: 0;
   z-index: 999;
   overflow-x: hidden;
-  transition: 1.5s;
-  background-color: tomato;
+  transition: 0.8s;
+  background-color: white;
 }
 
 .side-menu label {
@@ -265,13 +299,13 @@ input:checked + .slider:before {
     margin-top: 70px;
     height: 100%;
     position: absolute;
-    transition: all 0.8s ease-out;
+    transition: all 0.4s ease-out;
     width: 100%;
 }
 
 .side-menu ul {
-   list-style: none; /* Remove bullet points */
-   margin-left: 12px;
+   list-style: none;
+   margin-left: 20px;
    padding: 0;
    white-space: nowrap;
 }
@@ -279,16 +313,13 @@ input:checked + .slider:before {
 
 /* Default style */
 .logo::before {
-  content: "RIJKSMUSEUM";
+  content: "Rijks Museum";
 }
 
 /* Media query for smaller screens */
 @media (max-width: 576px) {
   /* Hide "rijksmuseum" text */
-  .logo {
-     content: "RM";
-    display: inline-block;
-  }
+
   /* Display "RM" text */
   .logo::before {
     content: "RM";

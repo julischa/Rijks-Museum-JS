@@ -19,7 +19,7 @@ const lightSwitchEffect = () => {
 
   if (toggle.classList.contains("bi-moon")) {
     // Dark mode
-    body.style.background = "black";
+    body.style.background = "#282c34";
     body.style.color = "white";
     body.style.transition = "2s";
 
@@ -68,7 +68,7 @@ const lightSwitchEffect = () => {
     });
 
     body.style.background = "white";
-    body.style.color = "black";
+    body.style.color = "#282c34";
     body.style.transition = "2s";
     h1.style.color = "black";
     h1.style.transition = "2s";
