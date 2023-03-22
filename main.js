@@ -58,7 +58,7 @@ const lightSwitchEffect = () => {
 
     h2Elements.forEach((tag) => {
       tag.style.color = "white";
-      tag.style.transition = "2s";
+      tag.style.transition = "1s";
     });
 
     const cards = document.querySelectorAll(".card");
@@ -73,7 +73,7 @@ const lightSwitchEffect = () => {
     h1.style.color = "black";
     h1.style.transition = "2s";
     h2.style.color = "black";
-    h2.style.transition = "2s";
+    h2.style.transition = "1s";
 
     navbar.style.borderBottom = "0.3px solid black";
     navbar.style.transition = "2s";

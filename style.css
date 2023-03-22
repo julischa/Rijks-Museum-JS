@@ -5,6 +5,10 @@ body {
 	src: url("neuemetana-regular.otf") format("truetype");
 }
 
+@font-face {
+    font-family: "Neue Metana";
+    src: url(NeueMetana-Regular.otf);
+  }
 
 .navbar>.container {
 	font-family: "Neue Metana";
@@ -41,9 +45,9 @@ h3 {
 #button2 {
 	font-family: "Neue Metana";
 	font-size: 17px;
-	background-color: #b0a6cb;
+	background-color: tomato;
 	border-radius: 0cm;
-	border-color: #b0a6cb;
+	border-color: tomato;
 }
 
 #button2:hover {
@@ -51,8 +55,16 @@ h3 {
   border-color: #555f41;
 }
 
-#footer {
+footer {
 	font-family: "Neue Metana";
+	font-size: 21px;
+	display: flex;
+	align-items: center;
+  background-color: #ccc;
+}
+
+#exhi {
+  font-family: "Neue Metana";
 	font-size: 21px;
 	display: flex;
 	align-items: center;
@@ -69,7 +81,7 @@ input {
 	width: 200px;
 	height: 40px;
 	font-family: "Neue Metana";
-	border-color: #b0a6cb;
+	border-color: #ccc;
 	font-size: 18px;
 	padding-left: 15px;
 }
@@ -199,7 +211,7 @@ input:checked + .slider:before {
 
 .navbar-toggler {
    border: none;
-   background-color: #b0a6cb;
+   background-color: tomato;
    outline: none;
    cursor: pointer;
    border-radius: 0cm;
@@ -294,5 +306,26 @@ input:checked + .slider:before {
    h3 {
     font-size: 16px;
     width: 340px;
+  }
+}
+
+
+.banner {
+  position: fixed;
+  top: 100;
+  right: 100%;
+  background-color: #b0a6cb;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  animation: banner-slide 6s linear infinite;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }
