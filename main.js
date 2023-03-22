@@ -21,6 +21,7 @@ const lightSwitchEffect = () => {
     // Dark mode
     body.style.background = "#282c34";
     body.style.color = "white";
+
     body.style.transition = "2s";
 
     h1.style.color = "white";
@@ -68,7 +69,7 @@ const lightSwitchEffect = () => {
     });
 
     body.style.background = "white";
-    body.style.color = "#282c34";
+    body.style.color = "black";
     body.style.transition = "2s";
     h1.style.color = "black";
     h1.style.transition = "2s";

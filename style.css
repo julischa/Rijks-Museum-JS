@@ -64,6 +64,13 @@ h3 {
 	padding-top: 0px;
 }
 
+h4 {
+	font-family: "Neue Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
+	font-size: 30px;
+	color: white;
+}
+
 #button2 {
 	font-family: "Neue Metana";
 	font-size: 17px;
@@ -131,14 +138,6 @@ a {
   font-family: "Neue Metana";
 }
 
-#a2 {
-  color: black;
-  text-decoration: none;
-  position: relative;
-  font-family: "Neue Metana";
-}
-
-
 a:before {
   content: "";
   position: absolute;
@@ -167,13 +166,6 @@ a:hover {
   color: black;
   z-index: 1!important;
 }
-
-.card-bg {
-  background-color: #b0a6cb;
-  margin-right: 70px;
-  border-radius: 0px;
-}
-
 
 .switch {
   position: relative;
@@ -235,8 +227,8 @@ input:checked + .slider:before {
 
 
 .navbar-toggler {
-   background-color: #ccc;
-   border-radius: none;
+   background-color: white;
+   border-radius: 0px;
    cursor: pointer;
    margin-top: -15px;
    padding: 10px;
@@ -246,24 +238,26 @@ input:checked + .slider:before {
   height: 1px;
   width: 20px;
   border-color: #ccc;
-  border-radius: none;
+  border-radius: 0px;
   background-color: black;
-  margin: 3px 0; /* Changed margin to add more space between the bars */
+  margin: 3px 0;
   transition: transform 0.3s;
 }
 
 .side-menu {
-  position: fixed;
-  margin-top: 70px;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 0;
-  z-index: 999;
-  overflow-x: hidden;
-  transition: 0.8s;
-  background-color: white;
+position: fixed;
+margin-top: 0px;
+right: 0;
+height: 100%;
+width: 0;
+z-index: 999;
+overflow-x: hidden;
+transition: 0.8s;
+background: white;
+opacity: 1;
+white-space: nowrap;
 }
+
 
 .side-menu label {
   position: absolute;
@@ -273,43 +267,139 @@ input:checked + .slider:before {
   z-index: 1;
 }
 
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 15px;
+}
+
 .side-menu .menu-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  white-space: nowrap;
 }
 
 .side-menu .menu-links a {
-  font-size: 40px;
+  font-size: 45px;
+  list-style: none;
   margin: 20px;
-  color: black;
+  color: tomato;
   text-decoration: none;
   transition: 0.3s;
-}
-
-.side-menu .menu-links a:hover {
-  color: #b0a6cb;
+  white-space: nowrap;
 }
 
 .active {
-   content: '';
-    display: block;
-    margin-top: 70px;
-    height: 100%;
-    position: absolute;
-    transition: all 0.4s ease-out;
-    width: 100%;
+  content: '';
+  display: block;
+  margin-top: 0px;
+  height: 100%;
+  position: absolute;
+  transition: all 0.8s ease-out;
+  width: 100%;
 }
 
-.side-menu ul {
-   list-style: none;
-   margin-left: 20px;
-   padding: 0;
-   white-space: nowrap;
+
+#a2 {
+  text-decoration: none;
+  position: relative;
+  font-family: "Neue Metana";
+  color: black;
+  font-size: 40px;
+  padding: 0;
+  white-space: nowrap;
 }
 
+#a2:before {
+  display: none;
+}
+
+
+
+/* Exhibition Page */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Neue Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
+}
+
+.container h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Neue Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#button-container button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  background-color: #c0392b;
+  color: black;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: "Neue Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
+}
+
+#button-container button:hover {
+  background-color: #e74c3c;
+}
+
+#delete-button {
+  background-color: #f1c40f;
+  color: #000;
+  font-family: "Neue Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
+}
+
+#delete-button:hover {
+  background-color: #f7dc6f;
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#card-container > div {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #ecf0f1;
+  border-radius: 0.25rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color:#000;
+}
+
+#card-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#card-container p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-family: "Neue Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
+  color:#000;
+}
 
 /* Default style */
 .logo::before {
@@ -318,9 +408,6 @@ input:checked + .slider:before {
 
 /* Media query for smaller screens */
 @media (max-width: 576px) {
-  /* Hide "rijksmuseum" text */
-
-  /* Display "RM" text */
   .logo::before {
     content: "RM";
     display: inline-block;
@@ -330,33 +417,27 @@ input:checked + .slider:before {
     font-size: 60px;
   }
 
-   h2 {
+  #intro {
     font-size: 60px;
   }
 
-   h3 {
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
     font-size: 16px;
     width: 340px;
   }
-}
 
-
-.banner {
-  position: fixed;
-  top: 100;
-  right: 100%;
-  background-color: #b0a6cb;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  animation: banner-slide 6s linear infinite;
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateY(-100%);
+  .navbar>.container {
+    font-size: 8px;
   }
-  100% {
-    transform: translateY(0%);
+
+  .side-menu .menu-links a {
+    font-size: 25px;
+    margin: 15px;
   }
+
 }
+
