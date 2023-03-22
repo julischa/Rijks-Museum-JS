@@ -9,15 +9,49 @@
       <title>RIJKS MUSEUM AMSTERDAM</title>
    </head>
    <body>
-      <nav class="navbar">
-         <div class="container navbar-expand-lg justify-content">
-           <h4>
-   RIJKSMUSEUM
-   <label class="switch">
-      <input type="checkbox" id="toggleLight">
-      <span class="slider"></span>
-   </label>
-</h4>
+<nav class="navbar">
+   <div class="container navbar-expand-lg justify-content">
+      <h4>
+         <div class="logo">
+         <label class="switch">
+            <input type="checkbox" id="toggleLight">
+            <span class="slider"></span>
+         </label>
+         </div>
+      </h4>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   <div class="hamburger-bar"></div>
+   <div class="hamburger-bar"></div>
+   <div class="hamburger-bar"></div>
+</button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3">
+               <a class="h4" href="#">What's on</a>
+            </li>
+            <li class="nav-item me-3">
+               <a class="h4" href="#">Visit</a>
+            </li>
+            <li class="nav-item me-3">
+               <a class="h4" href="#">Buy Tickets</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</nav>
+<nav class="side-menu">
+   <ul>
+      <li class="nav-item my-4">
+               <a href="exhibition.html" id="a2">What's on</a>
+            </li>
+            <li class="nav-item my-4">
+               <a href="#" id="a2">Visit</a>
+            </li>
+            <li class="nav-item my-4">
+               <a href="tickets.html" id="a2">Buy Tickets</a>
+            </li>
+            </ul>
+</nav>
 
             <ul class="nav d-flex align-items-center justify-content">
                <li class="nav-item mx-4">
@@ -43,6 +77,17 @@
             </ul>
          </div>
       </nav>
+
+
+
+
+
+
+
+
+
+
+
       <div class="d-flex align-items-center h-100 py-4">
          <h1 class="mx-auto">Buy Tickets</h1>
       </div>
@@ -66,7 +111,7 @@
                      Rijks Museum Amsterdam
                   </p>
                </footer>
-               <a href="loading.html">Check</a>
+               <a href="#">Check</a>
             </section>
          </article>
          <article class="card fl-left">
@@ -89,50 +134,49 @@
                      Rijks Museum Amsterdam
                   </p>
                </div>
-               <a href="loading.html">Check</a>
+               <a href="#">Check</a>
             </section>
          </article>
       </div>
       </div>
-      <footer class="w-100 py-4 flex-shrink-0" id="footer">
-         <div class="container py-4">
-            <div class="row gy-4 gx-5">
-               <div class="col-lg-4 col-md-6">
-                  <h3>Rijks Museum</h3>
-                  <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                  </p>
-               </div>
-               <div class="col-lg-2 col-md-6">
-                  <h3>Museum</h3>
-                  <ul class="list-unstyled">
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">About</a></li>
-                     <li><a href="#">How to get there</a></li>
-                     <li><a href="#">FAQ</a></li>
-                  </ul>
-               </div>
-               <div class="col-lg-2 col-md-6">
-                  <h3>Exhibition</h3>
-                  <ul class="list-unstyled text-muted">
-                     <li><a href="#">Rembrandt</a></li>
-                     <li><a href="#">Vermeer</a></li>
-                     <li><a href="index.html">Other</a></li>
-                     <li><a href="index.html">Other</a></li>
-                  </ul>
-               </div>
-               <div class="col-lg-4 col-md-6">
-                  <h3>Newsletter</h3>
-                  <p>Sign up for our Newsletter.</p>
-                  <form action="#">
-                     <div class="input-group mb-3">
-                        <input id="form-control class="form-control" type="text" placeholder="E-Mail Address" aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-primary" id="button-addon2" type="button">Sign up</button>
-                     </div>
-                  </form>
-               </div>
-            </div>
+
+
+<footer class="w-100 py-4 px-4 flex-shrink-0" id="exhi">
+   <div class="container">
+      <div class="row">
+         <div class="col-6">
+            <h3>Museum</h3>
+            <ul class="list-unstyled">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Other</a></li>
+               <li><a href="#">FAQ</a></li>
+            </ul>
          </div>
-      </footer>
-      <script src="api.js"></script>
+         <div class="col-6">
+            <h3>Exhibition</h3>
+            <ul class="list-unstyled text-muted">
+               <li><a href="#">Rembrandt</a></li>
+               <li><a href="#">Vermeer</a></li>
+               <li><a href="index.html">Other</a></li>
+               <li><a href="index.html">Other</a></li>
+            </ul>
+         </div>
+         <div class="col-12 mt-3">
+            <h3>Newsletter</h3>
+            <p>Sign up for our Newsletter.</p>
+            <form action="#">
+               <div class="input-group mb-3">
+                  <input id="form-control class="form-control" type="text" placeholder="E-Mail Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn btn-primary" id="button2" type="button">Sign up</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</footer>
+
+      <script src="main.js"></script>
+      <script src="hamburger.js"></script>
    </body>
 </html>
