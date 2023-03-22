@@ -228,7 +228,7 @@ input:checked + .slider:before {
   z-index: 999;
   overflow-x: hidden;
   transition: 1.5s;
-  background-color: white;
+  background-color: tomato;
 }
 
 .side-menu label {
@@ -248,7 +248,7 @@ input:checked + .slider:before {
 }
 
 .side-menu .menu-links a {
-  font-size: 24px;
+  font-size: 40px;
   margin: 20px;
   color: black;
   text-decoration: none;
