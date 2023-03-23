@@ -32,25 +32,44 @@ h1 {
 
 #intro {
   font-family: "Neue Metana";
-	src: url("neuemetana-regular.otf") format("truetype");
-	font-size: 130px;
-	font-weight: lighter;
-	color: white;
-  animation: slideUp 1.5s ease-in-out;
+  src: url("neuemetana-regular.otf") format("truetype");
+  font-size: 130px;
+  font-weight: lighter;
+  color: white;
+  animation: slideUpIntro 1.5s ease-in-out;
   animation-fill-mode: both;
 }
 
+@keyframes slideUpIntro {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
-@keyframes slideUp {
-from {
-transform: translateY(100px);
-opacity: 0;
+#intro2 {
+  font-family: "Neue Metana";
+  src: url("neuemetana-regular.otf") format("truetype");
+  animation: slideUpIntro2 1.5s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
-to {
-transform: translateY(0);
-opacity: 1;
+
+@keyframes slideUpIntro2 {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-}
+
 
 h2 {
 	font-family: "Neue Metana";
@@ -214,6 +233,7 @@ a:hover {
   display: inline-block;
   width: 60px;
   height: 25px;
+  padding-bottom: 10px;
 }
 
 .switch input {
@@ -423,7 +443,6 @@ white-space: nowrap;
 
   h3 {
     font-size: 16px;
-    width: 340px;
   }
 
   .navbar>.container {
