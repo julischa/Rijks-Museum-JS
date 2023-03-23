@@ -1,3 +1,8 @@
+/* *{
+  box-sizing: border-box;
+  background: rgb(0, 100, 0, 0.1) !important;
+} */
+
 body {
 	background-color: #282c34;
 	color: white;
@@ -71,6 +76,35 @@ h4 {
 	color: white;
 }
 
+.event-table {
+border-collapse: collapse;
+width: 100%;
+margin-top: 50px;
+font-family: "Neue Metana";
+src: url("neuemetana-regular.otf") format("truetype");
+font-size: 25px;
+border-bottom: 1px solid white;
+}
+
+.event-table th,
+.event-table td {
+text-align: left;
+padding: 12px;
+border-bottom: 1px solid white;
+}
+
+.event-table th {
+color: white;
+font-weight: bold;
+font-size: 16px;
+}
+
+.event-table td {
+font-size: 13px;
+}
+
+
+
 #button2 {
 	font-family: "Neue Metana";
 	font-size: 17px;
@@ -86,9 +120,9 @@ h4 {
 
 footer {
 	font-family: "Neue Metana";
-	font-size: 21px;
+	font-size: 13px;
 	display: flex;
-	align-items: center;
+  text-align: left;
   background-color: #ccc;
 }
 
@@ -124,6 +158,20 @@ input {
 	background: white;
 }
 
+.card-title {
+  color: black
+}
+
+.card-text {
+  color: black;
+  font-size: 17px;
+}
+
+.card-text1 {
+  color: black;
+  font-size: 14px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -141,12 +189,11 @@ a {
 a:before {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 25px;
-  color: black!important;
-  background-color: #b0a6cb;
+  height: 0.2em;
+  border-bottom: 0.4px solid white;
   z-index: -10;
   transform: scaleX(0);
   transition: transform 0.3s ease;
@@ -157,13 +204,8 @@ a:hover:before {
   z-index: -10;
 }
 
-a:color::before {
-	color: black; 
-	transform: scaleX(1);
-}
-
 a:hover {
-  color: black;
+  color: white;
   z-index: 1!important;
 }
 
@@ -220,6 +262,43 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+
+/*Banner*/
+
+.parent-element {
+  width: 390px;
+  overflow: hidden;
+}
+
+div {
+  overflow: hidden;
+}
+
+.banner {
+  position: relative;
+  width: 390px;
+  white-space: nowrap;
+  animation: bannerMove 10s linear infinite;
+  width: 100px;
+}
+
+.banner::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 40%;
+  width: 390px;
+  white-space: nowrap;
+}
+
+@keyframes bannerMove {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 
 
 
@@ -320,7 +399,7 @@ white-space: nowrap;
 
 /* Default style */
 .logo::before {
-  content: "Rijks Museum";
+  content: "RIJKS MUSEUM";
 }
 
 /* Media query for smaller screens */
