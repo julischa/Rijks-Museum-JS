@@ -25,28 +25,6 @@ h1 {
 	color: white;
 }
 
-#intro {
-  font-family: "Neue Metana";
-	src: url("neuemetana-regular.otf") format("truetype");
-	font-size: 130px;
-	font-weight: lighter;
-	color: white;
-  animation: slideUp 1.5s ease-in-out;
-  animation-fill-mode: both;
-}
-
-
-@keyframes slideUp {
-from {
-transform: translateY(100px);
-opacity: 0;
-}
-to {
-transform: translateY(0);
-opacity: 1;
-}
-}
-
 h2 {
 	font-family: "Neue Metana";
 	src: url("neuemetana-regular.otf") format("truetype");
@@ -71,6 +49,13 @@ h4 {
 	color: white;
 }
 
+h5 {
+	font-family: "Neue Metana";
+	src: url("neuemetana-regular.otf") format("truetype");
+	font-size: 30px;
+	color: black;
+}
+
 #button2 {
 	font-family: "Neue Metana";
 	font-size: 17px;
@@ -89,13 +74,6 @@ footer {
 	display: flex;
 	align-items: center;
   background-color: #ccc;
-}
-
-#exhi {
-  font-family: "Neue Metana";
-	font-size: 21px;
-	display: flex;
-	align-items: center;
 }
 
 #form-control {
@@ -157,7 +135,7 @@ a:hover:before {
 }
 
 a:color::before {
-	color: black; 
+	color: white; 
 	transform: scaleX(1);
 }
 

@@ -70,7 +70,7 @@ function render(api) {
     author.innerText = api.artObjects[i].principalOrFirstMaker;
 
     const container = document.createElement("div");
-    container.appendChild(document.createElement("h4")).innerText = title;
+    container.appendChild(document.createElement("h5")).innerText = title;
     container.appendChild(img);
     container.appendChild(author);
 

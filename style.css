@@ -302,7 +302,7 @@ div {
   position: relative;
   width: 390px;
   white-space: nowrap;
-  animation: bannerMove 10s linear infinite;
+  animation: bannerMove 6s linear infinite;
   width: 100px;
 }
 
@@ -400,7 +400,7 @@ white-space: nowrap;
   margin-top: 0px;
   height: 100%;
   position: absolute;
-  transition: all 0.8s ease-out;
+  transition: all 0.5s ease-out;
   width: 100%;
 }
 
