@@ -1,6 +1,6 @@
 <h1>Rijks Museum API</h1>
 
-This is a website for the Rijks Museum Amsterdam, created as part of a web development course. The website includes information about the museum's exhibitions-
+This is a website for the Rijks Museum Amsterdam, created as part of a web development course. The website includes information about the museum's exhibitions and artists.
 
 <h1>Technologies Used</h1>
 
