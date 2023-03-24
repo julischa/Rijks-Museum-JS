@@ -331,7 +331,7 @@ input:checked + .slider:before {
 
 .side-menu {
 position: fixed;
-margin-top: 0px;
+margin-top: 170px;
 right: 0;
 height: 100%;
 width: 0;
@@ -379,7 +379,7 @@ white-space: nowrap;
 .active {
   content: '';
   display: block;
-  margin-top: 0px;
+  margin-top: 170px;
   height: 100%;
   position: absolute;
   transition: all 0.8s ease-out;
@@ -626,5 +626,4 @@ white-space: nowrap;
 #card-container>div {
 	background: white;
 	display: flex;
-	flex-direction:
 }

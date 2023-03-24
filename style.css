@@ -139,9 +139,12 @@ font-size: 13px;
 }
 
 footer {
-	font-family: "Neue Metana";
-	font-size: 13px;
-	display: flex;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  font-family: "Neue Metana";
+  font-size: 13px;
+  display: flex;
   text-align: left;
   background-color: #ccc;
 }
