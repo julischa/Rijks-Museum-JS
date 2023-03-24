@@ -80,8 +80,7 @@ h4 {
 }
 
 #button2:hover {
-  background-color: #555f41;
-  border-color: #555f41;
+  background-color: #e74c3c;
 }
 
 footer {
@@ -385,12 +384,12 @@ white-space: nowrap;
 }
 
 #button-container button {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   margin: 0 0.5rem;
-  background-color: #c0392b;
-  color: black;
+  background-color: #df683e;;
+  color: white;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: none;
   cursor: pointer;
   font-family: "Neue Metana";
 	src: url("neuemetana-regular.otf") format("truetype");

@@ -30,6 +30,7 @@ h1 {
 	color: white;
 }
 
+
 #intro {
   font-family: "Neue Metana";
   src: url("neuemetana-regular.otf") format("truetype");
@@ -133,8 +134,8 @@ font-size: 13px;
 }
 
 #button2:hover {
-  background-color: #555f41;
-  border-color: #555f41;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
 }
 
 footer {
@@ -231,9 +232,9 @@ a:hover {
 .switch {
   position: relative;
   display: inline-block;
+
   width: 60px;
   height: 25px;
-  padding-bottom: 10px;
 }
 
 .switch input {
@@ -379,13 +380,12 @@ white-space: nowrap;
   align-items: center;
   height: 100%;
   white-space: nowrap;
+  
 }
 
 .side-menu .menu-links a {
-  font-size: 45px;
   list-style: none;
   margin: 20px;
-  color: tomato;
   text-decoration: none;
   transition: 0.3s;
   white-space: nowrap;
@@ -401,13 +401,12 @@ white-space: nowrap;
   width: 100%;
 }
 
-
 #a2 {
   text-decoration: none;
   position: relative;
   font-family: "Neue Metana";
   color: black;
-  font-size: 40px;
+  font-size: 20px;
   padding: 0;
   white-space: nowrap;
 }

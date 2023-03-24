@@ -22,6 +22,7 @@ function createButtons() {
 
   const createButton = (text, value) => {
     const button = document.createElement("button");
+    button.setAttribute("class", "px-4 py-2 mt-2 mx-2 red-button");
     button.innerText = text;
     button.value = value;
     buttonContainer.appendChild(button);
@@ -32,6 +33,10 @@ function createButtons() {
   const vermeerButton = createButton("VERMEER", "Johannes Vermeer");
   const deleteButton = createButton("✶");
   deleteButton.setAttribute("id", "delete-button");
+
+  rembrandtButton.classList.add("red-button");
+  vermeerButton.classList.add("red-button");
+  deleteButton.classList.add("red-button");
 
   addEvents(rembrandtButton, vermeerButton, deleteButton);
 }
@@ -65,7 +70,7 @@ function render(api) {
     author.innerText = api.artObjects[i].principalOrFirstMaker;
 
     const container = document.createElement("div");
-    container.appendChild(document.createElement("p")).innerText = title;
+    container.appendChild(document.createElement("h4")).innerText = title;
     container.appendChild(img);
     container.appendChild(author);
 
