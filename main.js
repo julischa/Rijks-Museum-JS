@@ -54,7 +54,7 @@ const lightSwitchEffect = () => {
     body.style.color = "white";
     body.style.transition = "2s";
 
-    sideMenu.style.background = "black";
+    sideMenu.style.background = "#282c34";
     sideMenu.style.color = "white";
     sideMenu.style.transition = "1s";
 
