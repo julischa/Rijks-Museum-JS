@@ -6,25 +6,31 @@
 body {
 	background-color: #282c34;
 	color: white;
-	font-family: "Metana";
-	src: url("neuemetana-regular.otf") format("truetype");
 }
 
 @font-face {
-    font-family: "Neue Metana";
-    src: url(NeueMetana-Regular.otf);
+    font-family: "Poppins Regular";
+    src: url(poppins-regular.ttf) format("truetype");
+    font-family: "Days";
+    src: url("dirtyline_36daysoftype_2022-webfont.woff") format("woff");
   }
 
+
+p {
+  font-weight: lighter;
+}
+
 .navbar>.container {
-	font-family: "Neue Metana";
-	src: url("neuemetana-regular.otf") format("truetype");
+	font-family: "Poppins Regular";
+	src: url("poppins-regular.ttf") format("truetype");
 	padding-top: 20px;
 	font-size: 10px;
+  font-weight: lighter;
 }
 
 h1 {
-	font-family: "Neue Metana";
-	src: url("neuemetana-regular.otf") format("truetype");
+	font-family: "Days";
+	src: url("dirtyline_36daysoftype_2022-webfont.woff") format("woff");
 	font-size: 130px;
 	font-weight: lighter;
 	color: white;
@@ -32,8 +38,8 @@ h1 {
 
 
 #intro {
-  font-family: "Neue Metana";
-  src: url("neuemetana-regular.otf") format("truetype");
+  font-family: "Poppins Regular";
+  src: url("poppins-regular.ttf") format("truetype");
   font-size: 130px;
   font-weight: lighter;
   color: white;
@@ -53,8 +59,8 @@ h1 {
 }
 
 #intro2 {
-  font-family: "Neue Metana";
-  src: url("neuemetana-regular.otf") format("truetype");
+  font-family: "Poppins Regular";
+  src: url("poppins-regular.ttf") format("truetype");
   animation: slideUpIntro2 1.5s ease-in-out;
   animation-fill-mode: both;
   animation-delay: 1s;
@@ -73,25 +79,25 @@ h1 {
 
 
 h2 {
-	font-family: "Neue Metana";
-	src: url("neuemetana-regular.otf") format("truetype");
+  font-family: "Poppins Regular";
+    src: url("poppins-regular.ttf") format("truetype");
 	font-size: 100px;
 	color: white;
 }
 
 h3 {
  	display: flex;
-  	justify-content: space-between;
-	font-family: "Neue Metana";
+  justify-content: space-between;
+	font-family: "Poppins";
 	font-size: 25px;
-	font-weight: 100;
+  font-weight: lighter;
 	line-height: normal;
 	padding-top: 0px;
 }
 
 h4 {
-	font-family: "Neue Metana";
-	src: url("neuemetana-regular.otf") format("truetype");
+  font-family: "Poppins Regular";
+  src: url("poppins-regular.ttf") format("truetype");
 	font-size: 30px;
 	color: white;
 }
@@ -100,8 +106,8 @@ h4 {
 border-collapse: collapse;
 width: 100%;
 margin-top: 50px;
-font-family: "Neue Metana";
-src: url("neuemetana-regular.otf") format("truetype");
+font-family: "Poppins Regular";
+src: url("poppins-regular.ttf") format("truetype");
 font-size: 25px;
 border-bottom: 1px solid white;
 }
@@ -126,23 +132,23 @@ font-size: 13px;
 
 
 #button2 {
-	font-family: "Neue Metana";
+	font-family: "Poppins";
 	font-size: 17px;
-	background-color: #df683e;
+	background-color: #ff2c00;
 	border-radius: 0cm;
-	border-color: #df683e;
+	border-color: #ff2c00;
 }
 
 #button2:hover {
-  background-color: #e74c3c;
-  border-color: #e74c3c;
+  background-color: ff2c00;
+  border-color: #ff2c00;
 }
 
 footer {
   position: sticky;
   bottom: 0;
   width: 100%;
-  font-family: "Neue Metana";
+  font-family: "Poppins";
   font-size: 13px;
   display: flex;
   text-align: left;
@@ -150,7 +156,7 @@ footer {
 }
 
 #exhi {
-  font-family: "Neue Metana";
+  font-family: "Poppins";
 	font-size: 21px;
 	display: flex;
 	align-items: center;
@@ -166,7 +172,7 @@ input {
 	border: 1px solid black;
 	width: 200px;
 	height: 40px;
-	font-family: "Neue Metana";
+	font-family: "Poppins";
 	border-color: #ccc;
 	font-size: 18px;
 	padding-left: 15px;
@@ -206,7 +212,7 @@ a {
   color: white;
   text-decoration: none;
   position: relative;
-  font-family: "Neue Metana";
+  font-family: "Poppins";
 }
 
 a:before {
@@ -274,11 +280,11 @@ a:hover {
 }
 
 input:checked + .slider {
-  background-color: #df683e;
+  background-color: #ff2c00;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #df683e;
+  box-shadow: 0 0 1px #ff2c00;
 }
 
 input:checked + .slider:before {
@@ -407,7 +413,7 @@ white-space: nowrap;
 #a2 {
   text-decoration: none;
   position: relative;
-  font-family: "Neue Metana";
+  font-family: "Poppins";
   color: black;
   font-size: 20px;
   padding: 0;
@@ -428,6 +434,7 @@ white-space: nowrap;
 @media (max-width: 576px) {
   .logo::before {
     content: "RM";
+    font-family: '36 Days';
     display: inline-block;
   }
 
@@ -445,6 +452,7 @@ white-space: nowrap;
 
   h3 {
     font-size: 16px;
+    font-weight: 10px;
   }
 
   .navbar>.container {

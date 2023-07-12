@@ -44,7 +44,7 @@ h1 {
 
 
 button {
-  background-color: #df683e;
+  background-color: #ff2c00;
   border: none;
   color: white;
   padding: 4px 10px;
@@ -152,14 +152,14 @@ font-size: 13px;
 #button2 {
 	font-family: "Neue Metana";
 	font-size: 10px;
-	background-color: #df683e;
+	background-color: #ff2c00;
 	border-radius: 0cm;
-	border-color: #df683e;
+	border-color: #ff2c00;
 }
 
 #button2:hover {
-  background-color: #e74c3c;
-  border-color: #e74c3c;
+  background-color: #ff2c00;
+  border-color: #ff2c00;
 }
 
 footer {
